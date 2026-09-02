@@ -1,0 +1,8 @@
+---
+- name: Windows Ping Test
+  hosts: windows_workstations
+  gather_facts: false
+
+  tasks:
+    - name: Test WinRM connectivity
+      ansible.windows.win_ping:
